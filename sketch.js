@@ -53,7 +53,7 @@ function draw() {
     }
     fill(drawR, drawG, drawB, drawT);
 
-    if (ifRotate > 5) {
+    if (ifRotate > 5 && type != 2) {
       rotate(getR());
     }
 
