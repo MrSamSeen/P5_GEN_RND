@@ -83,8 +83,8 @@ function insideCol(col) {
   if (col > 255) {
     r = 255;
   }
-  if (col < 10) {
-    r = 10;
+  if (col < 0) {
+    r = 0;
   }
   return r;
 }
@@ -124,7 +124,7 @@ function getS() {
 }
 
 function getCol() {
-  return round(random(-5, 5)) * 2;
+  return round(random(-5, 5)) * 5;
 }
 function getT() {
   return round(random(1, 25)) * 10;
