@@ -13,7 +13,7 @@ function setup() {
   type = round(random(0, 2));
   createCanvas(windowWidth, windowHeight);
   translate(windowWidth / 2, windowHeight / 2);
-  maxLen = windowHeight > windowWidth ? windowHeight : windowWidth;
+  maxLen = height > width ? width : height;
   background(30);
   frameRate(60);
   drawX = windowWidth / 2;
@@ -120,7 +120,7 @@ function getY() {
 }
 function getS() {
 
-  return round(random(2, 5)) * maxLen / 100;
+  return round(random(2, 5)) * maxLen / 50;
 }
 
 function getCol() {
