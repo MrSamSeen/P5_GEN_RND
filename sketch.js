@@ -5,7 +5,7 @@ let drawR, drawG, drawB, drawT, drawS, drawST;
 let type = 0;
 let ifStroke;
 let ifRotate;
-
+let maxLen;
 function setup() {
   startD = false;
   ifStroke = random(0, 10)
@@ -13,7 +13,7 @@ function setup() {
   type = round(random(0, 2));
   createCanvas(windowWidth, windowHeight);
   translate(windowWidth / 2, windowHeight / 2);
-
+  maxLen = windowHeight > windowWidth ? windowHeight : windowWidth;
   background(30);
   frameRate(60);
   drawX = windowWidth / 2;
@@ -119,7 +119,8 @@ function getY() {
   return (round(random(-4, 4)) * drawS) / 2;
 }
 function getS() {
-  return round(random(2, 5)) * windowWidth / 50;
+
+  return round(random(2, 5)) * maxLen / 100;
 }
 
 function getCol() {
