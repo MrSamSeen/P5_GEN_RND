@@ -28,11 +28,11 @@ function windowResized() {
   resizeCanvas(windowWidth, windowHeight);
   background(30);
 }
-function mousePressed() {
-  let fs = fullscreen();
-  fullscreen(!fs);
-  setup();
-}
+// function mousePressed() {
+//   let fs = fullscreen();
+//   fullscreen(!fs);
+//   setup();
+// }
 
 function draw() {
 
@@ -53,7 +53,7 @@ function draw() {
     }
     fill(drawR, drawG, drawB, drawT);
 
-    if (ifRotate > 5 && type != 2) {
+    if (ifRotate > 8 && type != 2) {
       rotate(getR());
     }
 
