@@ -119,7 +119,7 @@ function getY() {
   return (round(random(-4, 4)) * drawS) / 2;
 }
 function getS() {
-  return round(random(2, 5)) * windowWidth / 100;
+  return round(random(2, 5)) * windowWidth / 50;
 }
 
 function getCol() {
