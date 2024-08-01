@@ -46,7 +46,7 @@ function draw() {
     drawS = getS();
 
     if (ifStroke > 5) {
-      stroke(drawST);
+      stroke(drawST, 150);
     } else {
       noStroke();
 
