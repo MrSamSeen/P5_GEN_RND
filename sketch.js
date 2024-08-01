@@ -43,7 +43,7 @@ function draw() {
     drawB = insideCol(drawB + getCol());
     drawST = insideCol(drawST + getCol());
     drawT = getT();
-    drawS = getS();
+
 
     if (ifStroke > 5) {
       stroke(drawST, 150);
@@ -77,6 +77,7 @@ function draw() {
       ellipse(drawX, drawY, drawS, drawS);
     }
   }
+  drawS = getS();
 }
 function insideCol(col) {
   let r = col;
@@ -112,19 +113,18 @@ function insideY(cord) {
 }
 
 function getX() {
-  return (round(random(-4, 4)) * drawS) / 2;
+  return (round(random(-3, 3)) * drawS) / 2;
 }
 
 function getY() {
-  return (round(random(-4, 4)) * drawS) / 2;
+  return (round(random(-3, 3)) * drawS) / 2;
 }
 function getS() {
-
-  return round(random(2, 5)) * maxLen / 50;
+  return round(random(3, 6)) * maxLen / 70;
 }
 
 function getCol() {
-  return round(random(-5, 5)) * 5;
+  return round(random(-5, 5)) * 3;
 }
 function getT() {
   return round(random(1, 25)) * 10;
