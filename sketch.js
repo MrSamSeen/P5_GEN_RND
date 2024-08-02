@@ -53,9 +53,9 @@ function draw() {
     }
     fill(drawR, drawG, drawB, drawT);
 
-    if (ifRotate > 8 && type != 2) {
-      rotate(getR());
-    }
+    // if (ifRotate > 9 && type != 2) {
+    //   rotate(getR());
+    // }
 
     drawX = drawX + getX();
     drawY = drawY + getY();
